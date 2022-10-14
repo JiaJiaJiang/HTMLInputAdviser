@@ -1,0 +1,31 @@
+{
+  "name": "inputadviser",
+  "version": "1.0.0",
+  "description": "input adviser helper",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JiaJiaJiang/HTMLInputAdviser.git"
+  },
+  "keywords": [
+    "input",
+    "html",
+    "javascript"
+  ],
+  "author": "luojia@luojia.me",
+  "license": "LGPL-2.1",
+  "bugs": {
+    "url": "https://github.com/JiaJiaJiang/HTMLInputAdviser/issues"
+  },
+  "homepage": "https://github.com/JiaJiaJiang/HTMLInputAdviser#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "@rollup/plugin-babel": "^6.0.0",
+    "rollup": "^3.1.0"
+  }
+}
