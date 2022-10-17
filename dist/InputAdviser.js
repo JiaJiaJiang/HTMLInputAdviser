@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-  typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.InputAdviser = {}));
-})(this, (function (exports) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.InputAdviser = factory());
+})(this, (function () { 'use strict';
 
   function _regeneratorRuntime() {
     _regeneratorRuntime = function () {
@@ -455,6 +455,6 @@
     return InputAdviser;
   }();
 
-  exports.InputAdviser = InputAdviser;
+  return InputAdviser;
 
 }));

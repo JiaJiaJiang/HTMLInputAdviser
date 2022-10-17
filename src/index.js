@@ -67,6 +67,4 @@
 	}
 }
 
-export {
-	InputAdviser,
-}
+export default InputAdviser;
