@@ -1,6 +1,6 @@
 {
   "name": "inputadviser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "input adviser helper",
   "main": "src/index.js",
   "scripts": {
