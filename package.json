@@ -10,7 +10,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JiaJiaJiang/HTMLInputAdviser.git"
+    "url": "git+https://github.com/JiaJiaJiang/html-InputAdviser.git"
   },
   "keywords": [
     "input",
@@ -20,9 +20,9 @@
   "author": "luojia@luojia.me",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JiaJiaJiang/HTMLInputAdviser/issues"
+    "url": "https://github.com/JiaJiaJiang/html-InputAdviser/issues"
   },
-  "homepage": "https://github.com/JiaJiaJiang/HTMLInputAdviser#readme",
+  "homepage": "https://github.com/JiaJiaJiang/html-InputAdviser#readme",
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.4",
