@@ -2,14 +2,21 @@
 
 An adviser for HTML input tag 
 
-### Directly use dist/InputAdviser.js
+## Get
 
-Just load InputAdviser.js by script tag and the `InputAdviser.InputAdviser` is the class object.
+### 1. Directly use dist/InputAdviser.js
 
-### install
+Just load InputAdviser.js by script tag and the `InputAdviser` is the class object.
+
+### 2. Install from npm
 
 ```shell
 npm i inputadviser
+```
+Then in your javascript code
+
+```javascript
+import InputAdviser from 'inputadviser'
 ```
 
 ## Usage
