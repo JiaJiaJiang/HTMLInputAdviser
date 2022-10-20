@@ -2,6 +2,10 @@
 
 An adviser for HTML input tag 
 
+## Preview
+
+![preview](inputadviser-preview.gif)
+
 ## Get
 
 ### 1. Directly use dist/InputAdviser.js
