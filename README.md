@@ -27,12 +27,29 @@ import InputAdviser from 'inputadviser'
 
 ```javascript
 new InputAdviser('selector of the input or the element',async word=>{
-	const list=[],descList=[];
+	let list=[];
 	//do something to get advice list
-	//...
+	list=[//just values
+		'abc',
+		'bdc',
+		'poi',
+	];
 
-	list.descList=descList;//if there is a description list, set it to list.descList
-
+	//value with descriptions
+	list=[//just values
+		{
+			value:'abc',
+			desc:'this is abc',
+		},
+		{
+			value:'bdc',
+			desc:'this is bdc',
+		},
+		{
+			value:'poi',
+			desc:'this is poi',
+		},
+	];
 	return list;
 });
 

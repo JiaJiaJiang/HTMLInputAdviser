@@ -26,7 +26,7 @@
     /**
      * Creates an instance of InputAdviser.
      * @param {HTMLElement|string} input the input element or a string element selector
-     * @param {function(string):array<string>} loader an advice loader function
+     * @param {function(string):Array<string|object>} loader an advice loader function
      */
     constructor(input, loader) {
       _defineProperty(this, "input", void 0);
@@ -50,7 +50,7 @@
           timer = setTimeout(async () => {
             let list = await loader(input.value);
             if (!list) return;
-            this.setList(list, list.descList);
+            this.setList(list);
           }, 500);
         });
       }
@@ -58,17 +58,17 @@
     /**
      *set content of the adviser
      *
-     * @param {Array<string>} list list of values
-     * @param {Array<string>} descList list of descriptions, the length of this array must be euqal to the list before
+     * @param {Array<string|object>} list list of values,when element is an object, it should have {value,desc} in it
      */
-    setList(list, descList) {
+    setList(list) {
       this.dataList.innerHTML = '';
-      if (descList && descList.length !== list.length) {
-        throw new Error('length of descList is not equal to list\'s');
-      }
       for (let i = 0; i < list.length; i++) {
-        const v = list[i],
-          desc = descList ? descList[i] : v;
+        let v = list[i],
+          desc = v;
+        if (typeof v === 'object' && v.value) {
+          desc = v.desc;
+          v = v.value;
+        }
         if (v == this.input.value) continue;
         let o = document.createElement('option');
         o.innerHTML = desc;
