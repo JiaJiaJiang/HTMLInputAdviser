@@ -35,8 +35,7 @@ new InputAdviser('selector of the input or the element',async word=>{
 		'poi',
 	];
 
-	//value with descriptions
-	list=[//just values
+	list=[//values with descriptions
 		{
 			value:'abc',
 			desc:'this is abc',
